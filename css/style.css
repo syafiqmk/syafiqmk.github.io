@@ -2,34 +2,37 @@
 /* font-family: 'Oswald', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); 
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-.header {
+/* navbar */
+.navbar {
+    background-color: #1B2430;
+}
+
+.nav-link {
+    margin-bottom: 3px;
+    transition: ease 100ms;
+}
+
+.nav-link:hover {
+    margin-bottom: 0;
+    border-bottom: 3px solid #D6D5A8;
+    transition: ease 150ms;
+}
+
+/* content */
+
+header, section, footer {
     height: 100vh;
-    background-image: linear-gradient(rgba(241, 122, 75, 0.5), rgba(0, 0, 100, 0.63)), url('../assets/bg.png');
-    background-size: cover;
 }
 
-.content {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+header {
+    background-color: #51557E;
 }
-
-.title {
-    margin-top: 200px;
-    font-size: 1.25rem;
-    line-height: 1;
-    text-shadow: 2px 2px black;
-    color: white;
-    background: rgba(138, 138, 138, 0.658);
-    padding: 25px;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-}
-
