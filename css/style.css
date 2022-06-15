@@ -1,6 +1,7 @@
 /* import */
 /* font-family: 'Oswald', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -13,7 +14,7 @@ html {
 
 /* navbar */
 .navbar {
-    background-color: #1B2430;
+    background-color: #222831;
 }
 
 .nav-link {
@@ -23,7 +24,7 @@ html {
 
 .nav-link:hover {
     margin-bottom: 0;
-    border-bottom: 3px solid #D6D5A8;
+    border-bottom: 3px solid #00ADB5;
     transition: ease 150ms;
 }
 
@@ -31,8 +32,29 @@ html {
 
 header, section, footer {
     height: 100vh;
+    padding-top: 25px;
 }
 
 header {
-    background-color: #51557E;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+section#profile {
+    background-color: #393E46;
+}
+
+section#edu {
+    background-color: #EEEEEE;
+}
+
+section#skill {
+    background-color: #393E46;
+}
+
+section#test-project {
+    background-color: #EEEEEE;
 }
