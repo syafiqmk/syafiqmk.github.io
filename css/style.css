@@ -30,9 +30,9 @@ html {
 
 /* content */
 
-header, section, footer {
-    height: 100vh;
-    padding-top: 25px;
+header, section {
+    min-height: 100vh;
+    padding-top: 20px;
 }
 
 header {
@@ -51,10 +51,30 @@ section#edu {
     background-color: #EEEEEE;
 }
 
+.edu-img {
+    height: 30vh;
+}
+
+.edu-text {
+    margin-top: 20px;
+}
+
 section#skill {
     background-color: #393E46;
 }
 
 section#test-project {
     background-color: #EEEEEE;
+}
+
+footer {
+    background-color: #00ADB5;
+}
+
+#social .fa-brands {
+    color: black;
+}
+
+#social-nav .fa-brands {
+    color: white;
 }
