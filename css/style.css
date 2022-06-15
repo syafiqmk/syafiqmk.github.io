@@ -63,6 +63,10 @@ section#skill {
     background-color: #393E46;
 }
 
+.skill-img {
+    height: 30vh;
+}
+
 section#test-project {
     background-color: #EEEEEE;
 }
