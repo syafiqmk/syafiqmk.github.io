@@ -1,100 +1,22 @@
 * {
-    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
-body {
-    max-width: 100%;
-    width: 100vw;
-    font-family: Arial, Helvetica, sans-serif;
+marquee {
+    background-color: pink;
+    margin: 2vh 2vw;
+    font-size: 1.5rem;
 }
 
-/* start of top section */
-
-#top {
-    height: 100vh;
-    color: white;
-    display: flex;
-}
-
-/* start of top left section */
-
-#top #top-left {
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #393E46;
-}
-
-#top #top-left #top-left-content {
+h2 {
     text-align: center;
+    margin: 1vh 0;
 }
 
-#top #top-left #top-left-content img {
-    border: 2px solid white;
-    border-radius: 5px;
+img {
+    display: block;
+    height: 75vh;
+    margin: 1vh auto;
 }
-
-#top #top-left #top-left-content h1 {
-    text-transform: uppercase;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-#top #top-left #top-left-content h3 {
-    padding: 10px 0 10px 0;
-    border-top: 2px solid white;
-    border-bottom: 2px solid white;
-}
-
-#top #top-left #top-left-content p {
-    margin-top: 10px;
-}
-
-/* end of top left section */
-
-/* start of top right section */
-
-#top #top-right {
-    height: 100%;
-    width: 50%;
-    background-color: #00ADB5;
-    padding: 5% 5vw 5% 5vw;
-}
-
-#top #top-right #about-title {
-    padding: 10px 25px 10px 25px;
-    background-color: #EEEEEE;
-    color: black;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-#top #top-right #about-content {
-    padding: 20px 25px 20px 25px;
-    text-align: justify;
-    background-color: #222831;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-#top #top-right #socials {
-    margin: 30px;
-    font-size: 2em;
-    padding: 10px 30px 10px 30px;
-    background-color: #222831;
-    border-radius: 25px;
-    text-align: center;
-}
-
-#top #top-right #socials a {
-    color: white;
-    margin: 0 1em 0 1em;
-}
-
-/* end of top right section */
-
-/* end of top section */
