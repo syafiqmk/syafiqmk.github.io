@@ -11,6 +11,11 @@
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
     <!-- css links -->
     <link rel="stylesheet" href="style.css">
     
@@ -45,14 +50,14 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section dayak-pattern dayak-pattern-bottom">
+    <section id="home" class="hero-section">
         <div class="container">
             <div class="row align-items-center min-vh-100">
                 <div class="col-lg-8 col-md-10 mx-auto text-center" data-aos="fade-up">
                     <div class="hero-content">
-                        <div class="hero-badge">From Samarinda</div>
+                        <div class="hero-badge">From Samarinda, Indonesia</div>
                         <h2>Hello, I am</h2>
-                        <h1 class="dayak-section-header">Syafiq Muhammad Kahfi</h1>
+                        <h1>Syafiq Muhammad Kahfi</h1>
                         <h4>A <span class="typed-text"></span><span class="cursor">&nbsp;</span></h4>
                         
                         <!-- socials -->
@@ -72,74 +77,69 @@
                 </div>
             </div>
         </div>
-        <div class="hero-patterns">
-            <div class="pattern-left"></div>
-            <div class="pattern-right"></div>
-        </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section-padding">
         <div class="container">
             <div class="section-title text-center mb-5" data-aos="fade-up">
-                <div class="section-icon"><i class="fas fa-user"></i></div>
-                <h2 class="dayak-section-header">About Me</h2>
-                <div class="dayak-divider"></div>
+                <h2>About Me</h2>
                 <p>Get to know me better</p>
             </div>
             
             <div class="row justify-content-center">
-                <div class="col-lg-9" data-aos="fade-up">
-                    <div class="about-content borneo-card tribal-card">
-                        <div class="borneo-pattern-top"></div>
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-content text-center">
                         <h3>Junior Laravel Developer from East Kalimantan</h3>
                         <p class="lead">Passionate about creating efficient and elegant web solutions.</p>
                         <p>I am a dedicated Junior Laravel Developer currently working at UtamaWeb since 2024. With a strong foundation in PHP and web technologies, I focus on building robust and scalable web applications using Laravel framework. I strive to write clean, maintainable code that delivers exceptional user experiences.</p>
                         <p>My journey in web development started during my vocational high school education in Software Engineering in Samarinda, East Kalimantan. I've continuously enhanced my skills through formal education and hands-on projects, specializing in Laravel ecosystem, front-end technologies, and database management.</p>
-                        
-                        <div class="row mt-4">
-                            <div class="col-md-6">
-                                <ul class="list-unstyled about-list">
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Experience:</strong> <span>1+ year</span></li>
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Email:</strong> <span>syafiqmuh.k@gmail.com</span></li>
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Company:</strong> <span>UtamaWeb</span></li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="list-unstyled about-list">
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Degree:</strong> <span>Diploma (D3)</span></li>
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Major:</strong> <span>Informatics Engineering</span></li>
-                                    <li><i class="fas fa-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
-                                </ul>
-                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="200">
+                     <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled about-list">
+                                <li><i class="fas fa-chevron-right"></i> <strong>Experience:</strong> <span>1+ year</span></li>
+                                <li><i class="fas fa-chevron-right"></i> <strong>Email:</strong> <span>syafiqmuh.k@gmail.com</span></li>
+                                <li><i class="fas fa-chevron-right"></i> <strong>Company:</strong> <span>UtamaWeb</span></li>
+                            </ul>
                         </div>
-                        
-                        <div class="mt-5 borneo-section">
-                            <h4><i class="fas fa-briefcase me-2"></i>Work Experience</h4>
-                            <div class="experience-item">
-                                <h5>Junior Laravel Developer</h5>
-                                <p class="text-muted">UtamaWeb | 2024 - Present</p>
-                                <ul class="ps-3 small">
-                                    <li>Developing and maintaining web applications using Laravel framework</li>
-                                    <li>Creating responsive front-end interfaces with Bootstrap and jQuery</li>
-                                    <li>Building RESTful APIs for client applications</li>
-                                    <li>Database design and optimization using MySQL/MariaDB</li>
-                                </ul>
-                            </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled about-list">
+                                <li><strong>Degree:</strong> <span>Diploma (D3)</span></li>
+                                <li><strong>Major:</strong> <span>Informatics Engineering</span></li>
+                                <li><strong>Freelance:</strong> <span>Available</span></li>
+                            </ul>
                         </div>
-                        
-                        <div class="mt-5 borneo-section">
-                            <h4><i class="fas fa-graduation-cap me-2"></i>Education</h4>
-                            <div class="education-item mb-3">
-                                <h5>Diploma in Informatics Engineering</h5>
-                                <p class="text-muted">Samarinda State Polytechnic, 2020 - 2023</p>
-                            </div>
-                            <div class="education-item">
-                                <h5>Vocational High School - Software Engineering</h5>
-                                <p class="text-muted">SMKN 7 Samarinda, 2017 - 2020</p>
-                            </div>
-                        </div>
-                        <div class="borneo-pattern-bottom"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 justify-content-center">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                    <h4 class="mb-4 text-center"><i class="fas fa-briefcase me-2"></i>Work Experience</h4>
+                    <div class="experience-item">
+                        <h5>Junior Laravel Developer</h5>
+                        <p class="text-muted">UtamaWeb | 2024 - Present</p>
+                        <ul class="ps-3 small">
+                            <li>Developing and maintaining web applications using Laravel framework</li>
+                            <li>Creating responsive front-end interfaces with Bootstrap and jQuery</li>
+                            <li>Building RESTful APIs for client applications</li>
+                            <li>Database design and optimization using MySQL/MariaDB</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                    <h4 class="mb-4 text-center"><i class="fas fa-graduation-cap me-2"></i>Education</h4>
+                    <div class="education-item mb-4">
+                        <h5>Diploma in Informatics Engineering</h5>
+                        <p class="text-muted">Samarinda State Polytechnic, 2020 - 2023</p>
+                    </div>
+                    <div class="education-item">
+                        <h5>Vocational High School - Software Engineering</h5>
+                        <p class="text-muted">SMKN 7 Samarinda, 2017 - 2020</p>
                     </div>
                 </div>
             </div>
@@ -147,20 +147,16 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section-padding bg-light">
+    <section id="skills" class="section-padding">
         <div class="container">
             <div class="section-title text-center mb-5" data-aos="fade-up">
-                <div class="section-icon"><i class="fas fa-code"></i></div>
-                <h2 class="dayak-section-header">My Skills</h2>
-                <div class="dayak-divider"></div>
+                <h2>My Skills</h2>
                 <p>What I bring to the table</p>
             </div>
             
             <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up">
-                    <div class="borneo-card tribal-card skill-container">
-                        <div class="tribal-skill-decoration top-right"></div>
-                        <div class="tribal-skill-decoration bottom-left"></div>
+                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-style">
                         <div class="row g-4">
                             <div class="col-lg-4" data-aos="fade-right">
                                 <div class="skill-group">
@@ -202,72 +198,61 @@
                 </div>
             </div>
         </div>
-        <div class="skills-decoration">
-            <div class="skills-pattern-left"></div>
-            <div class="skills-pattern-right"></div>
-        </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section-padding">
         <div class="container">
             <div class="section-title text-center mb-5" data-aos="fade-up">
-                <div class="section-icon"><i class="fas fa-envelope"></i></div>
-                <h2 class="dayak-section-header">Contact Me</h2>
-                <div class="dayak-divider"></div>
+                <h2>Contact Me</h2>
                 <p>Let's connect</p>
             </div>
             
             <div class="row justify-content-center">
-                <div class="col-lg-8" data-aos="fade-up">
-                    <div class="borneo-card tribal-card contact-container">
-                        <div class="borneo-pattern contact-pattern"></div>
-                        <h3>Get In Touch</h3>
-                        <p>Feel free to reach out to me for any inquiries or potential collaborations. I'm open to discussing new projects and opportunities.</p>
-                        
-                        <div class="row mt-5">
-                            <div class="col-md-4 mb-4 mb-md-0">
-                                <div class="contact-item text-center">
-                                    <div class="contact-icon">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                    <h5>Email</h5>
-                                    <p><a href="mailto:syafiqmuh.k@gmail.com">syafiqmuh.k@gmail.com</a></p>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-4 mb-4 mb-md-0">
-                                <div class="contact-item text-center">
-                                    <div class="contact-icon">
-                                        <i class="fas fa-map-marker-alt"></i>
-                                    </div>
-                                    <h5>Location</h5>
-                                    <p>Samarinda, East Kalimantan<br>Borneo Island, Indonesia</p>
-                                </div>
-                            </div>
-                            
-                            <div class="col-md-4">
-                                <div class="contact-item text-center">
-                                    <div class="contact-icon">
-                                        <i class="fas fa-briefcase"></i>
-                                    </div>
-                                    <h5>Work</h5>
-                                    <p>Junior Laravel Developer<br>at UtamaWeb</p>
-                                </div>
-                            </div>
+                <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to reach out to me for any inquiries or potential collaborations. I'm open to discussing new projects and opportunities.</p>
+                </div>
+            </div>
+            <div class="row mt-5 justify-content-center">
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-item text-center">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
                         </div>
-                        
-                        <div class="text-center mt-5">
-                            <h4>Connect With Me</h4>
-                            <div class="contact-social-links">
-                                <a href="https://www.linkedin.com/in/syafiq-muhammad-kahfi-6912961bb/" target="_blank" class="contact-social-item"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="https://github.com/syafiqmk" target="_blank" class="contact-social-item"><i class="fab fa-github"></i></a>
-                                <a href="mailto:syafiqmuh.k@gmail.com" target="_blank" class="contact-social-item"><i class="far fa-envelope"></i></a>
-                                <a href="https://www.instagram.com/syafiq.mk/" target="_blank" class="contact-social-item"><i class="fab fa-instagram"></i></a>
-                                <a href="https://twitter.com/SyMK015" target="_blank" class="contact-social-item"><i class="fab fa-twitter"></i></a>
-                            </div>
-                        </div>
+                        <h5>Email</h5>
+                        <p><a href="mailto:syafiqmuh.k@gmail.com">syafiqmuh.k@gmail.com</a></p>
                     </div>
+                </div>
+                
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-item text-center">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h5>Location</h5>
+                        <p>Samarinda, East Kalimantan<br>Indonesia</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-item text-center">
+                        <div class="contact-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h5>Work</h5>
+                        <p>Junior Laravel Developer<br>at UtamaWeb</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 pt-4" data-aos="fade-up" data-aos-delay="500">
+                <h4>Connect With Me</h4>
+                <div class="contact-social-links">
+                    <a href="https://www.linkedin.com/in/syafiq-muhammad-kahfi-6912961bb/" target="_blank" class="contact-social-item"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/syafiqmk" target="_blank" class="contact-social-item"><i class="fab fa-github"></i></a>
+                    <a href="mailto:syafiqmuh.k@gmail.com" target="_blank" class="contact-social-item"><i class="far fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/syafiq.mk/" target="_blank" class="contact-social-item"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/SyMK015" target="_blank" class="contact-social-item"><i class="fab fa-twitter"></i></a>
                 </div>
             </div>
         </div>
@@ -275,13 +260,12 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="simple-footer-pattern"></div>
         <div class="container text-center py-4">
             <div class="footer-logo">
                 <span>Sy</span>MK
             </div>
             <h3>Syafiq Muhammad Kahfi</h3>
-            <p>Junior Laravel Developer from East Kalimantan, Borneo</p>
+            <p>Junior Laravel Developer from Samarinda, Indonesia</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/syafiq-muhammad-kahfi-6912961bb/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a href="https://github.com/syafiqmk" target="_blank"><i class="fab fa-github"></i></a>
@@ -289,9 +273,9 @@
                 <a href="https://www.instagram.com/syafiq.mk/" target="_blank"><i class="fab fa-instagram"></i></a>
                 <a href="https://twitter.com/SyMK015" target="_blank"><i class="fab fa-twitter"></i></a>
             </div>
-            <div class="mt-3">
-                <p>&copy; 2025 Syafiq Muhammad Kahfi. All Rights Reserved.</p>
-                <p class="small">Made with <i class="fas fa-heart text-danger"></i> from Samarinda, East Kalimantan</p>
+            <div class="mt-4">
+                <p class="small">&copy; 2025 Syafiq Muhammad Kahfi. All Rights Reserved.</p>
+                <p class="small">Made with <i class="fas fa-heart text-danger"></i> from Samarinda</p>
             </div>
         </div>
     </footer>

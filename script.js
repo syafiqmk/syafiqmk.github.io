@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Initialize AOS animation library
     AOS.init({
         duration: 800,
-        easing: 'ease',
+        easing: 'ease-in-out',
         once: true,
         offset: 50
     });
@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // Navbar scroll behavior
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', function () {
-        if (window.scrollY > 100) {
-            navbar.style.padding = '10px 0';
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
         } else {
-            navbar.style.padding = '20px 0';
+            navbar.classList.remove('scrolled');
         }
     });
 
@@ -26,9 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-
-            if (pageYOffset >= (sectionTop - 200)) {
+            if (pageYOffset >= (sectionTop - 150)) {
                 current = section.getAttribute('id');
             }
         });
@@ -45,40 +43,43 @@ document.addEventListener('DOMContentLoaded', function () {
     const typedText = document.querySelector('.typed-text');
     const cursor = document.querySelector('.cursor');
 
-    const textArray = ["Junior Laravel Developer", "Web Developer", "PHP Programmer", "Fullstack Developer"];
-    const typingDelay = 100;
-    const erasingDelay = 100;
-    const newTextDelay = 2000; // Delay between current and next text
-    let textArrayIndex = 0;
-    let charIndex = 0;
+    if (typedText) {
+        const textArray = ["Junior Laravel Developer", "Web Developer", "PHP Programmer", "Fullstack Developer"];
+        const typingDelay = 100;
+        const erasingDelay = 50;
+        const newTextDelay = 2000; // Delay between current and next text
+        let textArrayIndex = 0;
+        let charIndex = 0;
 
-    function type() {
-        if (charIndex < textArray[textArrayIndex].length) {
-            if (!cursor.classList.contains('typing')) cursor.classList.add('typing');
-            typedText.textContent += textArray[textArrayIndex].charAt(charIndex);
-            charIndex++;
-            setTimeout(type, typingDelay);
-        } else {
-            cursor.classList.remove('typing');
-            setTimeout(erase, newTextDelay);
+        function type() {
+            if (charIndex < textArray[textArrayIndex].length) {
+                if (!cursor.classList.contains('typing')) cursor.classList.add('typing');
+                typedText.textContent += textArray[textArrayIndex].charAt(charIndex);
+                charIndex++;
+                setTimeout(type, typingDelay);
+            } else {
+                cursor.classList.remove('typing');
+                setTimeout(erase, newTextDelay);
+            }
         }
+
+        function erase() {
+            if (charIndex > 0) {
+                if (!cursor.classList.contains('typing')) cursor.classList.add('typing');
+                typedText.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
+                charIndex--;
+                setTimeout(erase, erasingDelay);
+            } else {
+                cursor.classList.remove('typing');
+                textArrayIndex++;
+                if (textArrayIndex >= textArray.length) textArrayIndex = 0;
+                setTimeout(type, typingDelay + 1100);
+            }
+        }
+
+        if (textArray.length) setTimeout(type, newTextDelay + 250);
     }
 
-    function erase() {
-        if (charIndex > 0) {
-            if (!cursor.classList.contains('typing')) cursor.classList.add('typing');
-            typedText.textContent = textArray[textArrayIndex].substring(0, charIndex - 1);
-            charIndex--;
-            setTimeout(erase, erasingDelay);
-        } else {
-            cursor.classList.remove('typing');
-            textArrayIndex++;
-            if (textArrayIndex >= textArray.length) textArrayIndex = 0;
-            setTimeout(type, typingDelay + 1100);
-        }
-    }
-
-    if (textArray.length) setTimeout(type, newTextDelay + 250);
 
     // Back to top button
     const backToTopButton = document.querySelector('.back-to-top');
@@ -101,9 +102,13 @@ document.addEventListener('DOMContentLoaded', function () {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            let target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 70, // Adjust for fixed navbar height
+                    behavior: 'smooth'
+                });
+            }
 
             // Close mobile menu if open
             const navbarCollapse = document.querySelector('.navbar-collapse');
@@ -113,5 +118,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // No contact form needed anymore
 });
