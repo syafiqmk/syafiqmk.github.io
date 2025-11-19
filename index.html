@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,34 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- css links -->
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Sy<span>MK</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
@@ -52,26 +59,33 @@
     <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-8 col-md-10 mx-auto text-center" data-aos="fade-up">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
                     <div class="hero-content">
-                        <div class="hero-badge">From Samarinda, Indonesia</div>
-                        <h2>Hello, I am</h2>
-                        <h1>Syafiq Muhammad Kahfi</h1>
-                        <h4>A <span class="typed-text"></span><span class="cursor">&nbsp;</span></h4>
-                        
-                        <!-- socials -->
-                        <div class="socials">
-                            <a href="https://www.linkedin.com/in/syafiq-muhammad-kahfi-6912961bb/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/syafiqmk" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="mailto:syafiqmuh.k@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-                            <a href="https://www.instagram.com/syafiq.mk/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://twitter.com/SyMK015" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <div class="hero-badge">
+                            <i class="fas fa-map-marker-alt me-2"></i> Samarinda, Indonesia
                         </div>
-                        
-                        <div class="mt-5">
-                            <a href="#about" class="btn btn-primary">About Me</a>
-                            <a href="#contact" class="btn btn-outline-primary ms-3">Contact</a>
+                        <h1 class="hero-title">Building Digital <br> Experiences</h1>
+                        <h4 class="hero-subtitle">I am <span class="text-white">Syafiq Muhammad Kahfi</span>, a <span
+                                class="typed-text"></span><span class="cursor">|</span></h4>
+
+                        <div class="d-flex justify-content-center gap-3 mt-4">
+                            <a href="#about" class="btn btn-custom btn-primary-custom">About Me</a>
+                            <a href="#contact" class="btn btn-custom btn-outline-custom">Contact</a>
+                        </div>
+
+                        <!-- socials -->
+                        <div class="social-links justify-content-center mt-5">
+                            <a href="https://www.linkedin.com/in/syafiq-muhammad-kahfi-6912961bb/" target="_blank"
+                                class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://github.com/syafiqmk" target="_blank" class="social-icon"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="mailto:syafiqmuh.k@gmail.com" target="_blank" class="social-icon"><i
+                                    class="fa-regular fa-envelope"></i></a>
+                            <a href="https://www.instagram.com/syafiq.mk/" target="_blank" class="social-icon"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/SyMK015" target="_blank" class="social-icon"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -82,64 +96,76 @@
     <!-- About Section -->
     <section id="about" class="section-padding">
         <div class="container">
-            <div class="section-title text-center mb-5" data-aos="fade-up">
+            <div class="section-title" data-aos="fade-up">
                 <h2>About Me</h2>
-                <p>Get to know me better</p>
+                <p>Passionate about creating efficient and elegant web solutions.</p>
             </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-                    <div class="about-content text-center">
-                        <h3>Junior Laravel Developer from East Kalimantan</h3>
-                        <p class="lead">Passionate about creating efficient and elegant web solutions.</p>
-                        <p>I am a dedicated Junior Laravel Developer currently working at UtamaWeb since 2024. With a strong foundation in PHP and web technologies, I focus on building robust and scalable web applications using Laravel framework. I strive to write clean, maintainable code that delivers exceptional user experiences.</p>
-                        <p>My journey in web development started during my vocational high school education in Software Engineering in Samarinda, East Kalimantan. I've continuously enhanced my skills through formal education and hands-on projects, specializing in Laravel ecosystem, front-end technologies, and database management.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5 justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="200">
-                     <div class="row">
-                        <div class="col-md-6">
-                            <ul class="list-unstyled about-list">
-                                <li><i class="fas fa-chevron-right"></i> <strong>Experience:</strong> <span>1+ year</span></li>
-                                <li><i class="fas fa-chevron-right"></i> <strong>Email:</strong> <span>syafiqmuh.k@gmail.com</span></li>
-                                <li><i class="fas fa-chevron-right"></i> <strong>Company:</strong> <span>UtamaWeb</span></li>
-                            </ul>
+
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="glass-card about-card">
+                        <h3 class="mb-4">Who I Am</h3>
+                        <p class="text-secondary mb-4">I am a dedicated Junior Laravel Developer currently working at
+                            UtamaWeb since 2024. With a strong foundation in PHP and web technologies, I focus on
+                            building robust and scalable web applications using Laravel framework.</p>
+                        <p class="text-secondary">My journey started during my vocational high school education in
+                            Software Engineering. I've continuously enhanced my skills through formal education and
+                            hands-on projects.</p>
+
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-code text-primary me-3"></i>
+                                    <div>
+                                        <h6 class="mb-0">Experience</h6>
+                                        <small class="text-secondary">1+ Year</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-graduation-cap text-primary me-3"></i>
+                                    <div>
+                                        <h6 class="mb-0">Degree</h6>
+                                        <small class="text-secondary">Diploma (D3)</small>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                            <ul class="list-unstyled about-list">
-                                <li><strong>Degree:</strong> <span>Diploma (D3)</span></li>
-                                <li><strong>Major:</strong> <span>Informatics Engineering</span></li>
-                                <li><strong>Freelance:</strong> <span>Available</span></li>
-                            </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="glass-card about-card">
+                        <h3 class="mb-4">Experience & Education</h3>
+
+                        <div class="mb-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-briefcase text-primary me-2"></i>
+                                <h5 class="mb-0">Junior Laravel Developer</h5>
+                            </div>
+                            <p class="text-secondary small mb-1">UtamaWeb | 2024 - Present</p>
+                            <p class="text-secondary small">Developing and maintaining web applications using Laravel
+                                framework.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5 pt-4 justify-content-center">
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                    <h4 class="mb-4 text-center"><i class="fas fa-briefcase me-2"></i>Work Experience</h4>
-                    <div class="experience-item">
-                        <h5>Junior Laravel Developer</h5>
-                        <p class="text-muted">UtamaWeb | 2024 - Present</p>
-                        <ul class="ps-3 small">
-                            <li>Developing and maintaining web applications using Laravel framework</li>
-                            <li>Creating responsive front-end interfaces with Bootstrap and jQuery</li>
-                            <li>Building RESTful APIs for client applications</li>
-                            <li>Database design and optimization using MySQL/MariaDB</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                    <h4 class="mb-4 text-center"><i class="fas fa-graduation-cap me-2"></i>Education</h4>
-                    <div class="education-item mb-4">
-                        <h5>Diploma in Informatics Engineering</h5>
-                        <p class="text-muted">Samarinda State Polytechnic, 2020 - 2023</p>
-                    </div>
-                    <div class="education-item">
-                        <h5>Vocational High School - Software Engineering</h5>
-                        <p class="text-muted">SMKN 7 Samarinda, 2017 - 2020</p>
+
+                        <hr class="border-secondary opacity-25">
+
+                        <div class="mb-4">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-user-graduate text-primary me-2"></i>
+                                <h5 class="mb-0">Diploma in Informatics</h5>
+                            </div>
+                            <p class="text-secondary small mb-0">Samarinda State Polytechnic, 2020 - 2023</p>
+                        </div>
+
+                        <div class="mb-0">
+                            <div class="d-flex align-items-center mb-2">
+                                <i class="fas fa-school text-primary me-2"></i>
+                                <h5 class="mb-0">Software Engineering</h5>
+                            </div>
+                            <p class="text-secondary small mb-0">SMKN 7 Samarinda, 2017 - 2020</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -149,51 +175,91 @@
     <!-- Skills Section -->
     <section id="skills" class="section-padding">
         <div class="container">
-            <div class="section-title text-center mb-5" data-aos="fade-up">
-                <h2>My Skills</h2>
-                <p>What I bring to the table</p>
+            <div class="section-title" data-aos="fade-up">
+                <h2>Technical Skills</h2>
+                <p>My technical toolkit and proficiency.</p>
             </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-10" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-style">
-                        <div class="row g-4">
-                            <div class="col-lg-4" data-aos="fade-right">
-                                <div class="skill-group">
-                                    <h3 class="skill-category"><i class="fas fa-laptop-code me-2"></i>Languages</h3>
-                                    <ul class="skill-list">
-                                        <li><i class="fas fa-check-circle"></i> HTML5</li>
-                                        <li><i class="fas fa-check-circle"></i> CSS3</li>
-                                        <li><i class="fas fa-check-circle"></i> JavaScript</li>
-                                        <li><i class="fas fa-check-circle"></i> PHP</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-4" data-aos="fade-up">
-                                <div class="skill-group">
-                                    <h3 class="skill-category"><i class="fas fa-puzzle-piece me-2"></i>Frameworks</h3>
-                                    <ul class="skill-list">
-                                        <li><i class="fab fa-laravel"></i> Laravel</li>
-                                        <li><i class="fab fa-bootstrap"></i> Bootstrap</li>
-                                        <li><i class="fab fa-js"></i> jQuery</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div class="col-lg-4" data-aos="fade-left">
-                                <div class="skill-group">
-                                    <h3 class="skill-category"><i class="fas fa-tools me-2"></i>Tools</h3>
-                                    <ul class="skill-list">
-                                        <li><i class="fab fa-git-alt"></i> Git</li>
-                                        <li><i class="fas fa-database"></i> MySQL</li>
-                                        <li><i class="fas fa-database"></i> MariaDB</li>
-                                        <li><i class="fas fa-terminal"></i> CLI</li>
-                                        <li><i class="fas fa-code"></i> RESTful API</li>
-                                    </ul>
-                                </div>
-                            </div>
+
+            <div class="row g-4">
+                <!-- Backend -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card skill-card h-100">
+                        <div class="skill-icon">
+                            <i class="fab fa-laravel"></i>
                         </div>
+                        <h4>Laravel</h4>
+                        <p class="text-secondary small mb-0">Backend Framework</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card skill-card h-100">
+                        <div class="skill-icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <h4>PHP</h4>
+                        <p class="text-secondary small mb-0">Core Language</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="glass-card skill-card h-100">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h4>MySQL</h4>
+                        <p class="text-secondary small mb-0">Database Management</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="glass-card skill-card h-100">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h4>JavaScript</h4>
+                        <p class="text-secondary small mb-0">Frontend Logic</p>
+                    </div>
+                </div>
+
+                <!-- More Skills -->
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+                    <div class="glass-card skill-card h-100">
+                        <div class="skill-icon">
+                            <i class="fab fa-bootstrap"></i>
+                        </div>
+                        <h4>Bootstrap</h4>
+                        <p class="text-secondary small mb-0">UI Framework</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+                    <div class="glass-card skill-card h-100">
+                        <div class="skill-icon">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <h4>Git</h4>
+                        <p class="text-secondary small mb-0">Version Control</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="700">
+                    <div class="glass-card skill-card h-100">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>REST API</h4>
+                        <p class="text-secondary small mb-0">API Development</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="800">
+                    <div class="glass-card skill-card h-100">
+                        <div class="skill-icon">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h4>CLI</h4>
+                        <p class="text-secondary small mb-0">Command Line</p>
                     </div>
                 </div>
             </div>
@@ -203,80 +269,54 @@
     <!-- Contact Section -->
     <section id="contact" class="section-padding">
         <div class="container">
-            <div class="section-title text-center mb-5" data-aos="fade-up">
-                <h2>Contact Me</h2>
-                <p>Let's connect</p>
-            </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-8 text-center" data-aos="fade-up" data-aos-delay="100">
-                    <h3>Get In Touch</h3>
-                    <p>Feel free to reach out to me for any inquiries or potential collaborations. I'm open to discussing new projects and opportunities.</p>
+            <div class="glass-card contact-card" data-aos="zoom-in">
+                <div class="section-title mb-5">
+                    <h2>Get In Touch</h2>
+                    <p>Feel free to reach out for collaborations or just a friendly hello.</p>
                 </div>
-            </div>
-            <div class="row mt-5 justify-content-center">
-                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
-                    <div class="contact-item text-center">
-                        <div class="contact-icon">
+
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                        <div class="contact-item">
                             <i class="fas fa-envelope"></i>
+                            <h5>Email</h5>
+                            <p class="text-secondary"><a href="mailto:syafiqmuh.k@gmail.com"
+                                    class="text-secondary">syafiqmuh.k@gmail.com</a></p>
                         </div>
-                        <h5>Email</h5>
-                        <p><a href="mailto:syafiqmuh.k@gmail.com">syafiqmuh.k@gmail.com</a></p>
                     </div>
-                </div>
-                
-                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
-                    <div class="contact-item text-center">
-                        <div class="contact-icon">
+                    <div class="col-md-4">
+                        <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
+                            <h5>Location</h5>
+                            <p class="text-secondary">Samarinda, Indonesia</p>
                         </div>
-                        <h5>Location</h5>
-                        <p>Samarinda, East Kalimantan<br>Indonesia</p>
                     </div>
                 </div>
-                
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="contact-item text-center">
-                        <div class="contact-icon">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <h5>Work</h5>
-                        <p>Junior Laravel Developer<br>at UtamaWeb</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-5 pt-4" data-aos="fade-up" data-aos-delay="500">
-                <h4>Connect With Me</h4>
-                <div class="contact-social-links">
-                    <a href="https://www.linkedin.com/in/syafiq-muhammad-kahfi-6912961bb/" target="_blank" class="contact-social-item"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/syafiqmk" target="_blank" class="contact-social-item"><i class="fab fa-github"></i></a>
-                    <a href="mailto:syafiqmuh.k@gmail.com" target="_blank" class="contact-social-item"><i class="far fa-envelope"></i></a>
-                    <a href="https://www.instagram.com/syafiq.mk/" target="_blank" class="contact-social-item"><i class="fab fa-instagram"></i></a>
-                    <a href="https://twitter.com/SyMK015" target="_blank" class="contact-social-item"><i class="fab fa-twitter"></i></a>
+
+                <div class="mt-4">
+                    <a href="mailto:syafiqmuh.k@gmail.com" class="btn btn-custom btn-primary-custom">Say Hello</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container text-center py-4">
-            <div class="footer-logo">
-                <span>Sy</span>MK
+    <footer>
+        <div class="container">
+            <div class="mb-4">
+                <a class="navbar-brand" href="#">Sy<span>MK</span></a>
             </div>
-            <h3>Syafiq Muhammad Kahfi</h3>
-            <p>Junior Laravel Developer from Samarinda, Indonesia</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/syafiq-muhammad-kahfi-6912961bb/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://github.com/syafiqmk" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:syafiqmuh.k@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-                <a href="https://www.instagram.com/syafiq.mk/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://twitter.com/SyMK015" target="_blank"><i class="fab fa-twitter"></i></a>
+            <div class="social-links justify-content-center mb-4">
+                <a href="https://www.linkedin.com/in/syafiq-muhammad-kahfi-6912961bb/" target="_blank"
+                    class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/syafiqmk" target="_blank" class="social-icon"><i
+                        class="fab fa-github"></i></a>
+                <a href="mailto:syafiqmuh.k@gmail.com" target="_blank" class="social-icon"><i
+                        class="far fa-envelope"></i></a>
+                <a href="https://www.instagram.com/syafiq.mk/" target="_blank" class="social-icon"><i
+                        class="fab fa-instagram"></i></a>
             </div>
-            <div class="mt-4">
-                <p class="small">&copy; 2025 Syafiq Muhammad Kahfi. All Rights Reserved.</p>
-                <p class="small">Made with <i class="fas fa-heart text-danger"></i> from Samarinda</p>
-            </div>
+            <p class="small text-secondary mb-0">&copy; 2025 Syafiq Muhammad Kahfi. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -286,7 +326,10 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
